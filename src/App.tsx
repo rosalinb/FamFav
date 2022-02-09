@@ -1,25 +1,30 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import MoviePage from "./pages/MoviePage/MoviePage";
+import TvShows from "./pages/TvShows/TvShows";
+import NavBar from "./NavBar/NavBar";
+import Home from "./pages/Home/Home";
+import KidsShowList from "./pages/KidsShowList/KidsShowList";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <ScrollToTop />
+      <div className="App">
+        <div>
+          <NavBar></NavBar>
+
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/movielist" element={<MoviePage />} />
+            <Route path="/tvshowlist" element={<TvShows />} />
+            <Route path="/kidsshowlist" element={<KidsShowList />} />
+          </Routes>
+        </div>
+      </div>
+    </Router>
   );
 }
 
