@@ -23,7 +23,9 @@ const PagesHeroContainer = styled.div`
   padding: 80px 0px 50px;
   height: 50vh;
   display: flex;
+  flex-direction: column;
   justify-content: space-around;
+  align-items: center;
 
   @media screen and (max-width: 768px) {
     padding: 50px 20px;
@@ -42,7 +44,25 @@ export const PageHeroHeader = styled.h3`
 
 export const GenreButtonsContainer = styled.div`
   display: flex;
-  flex-direction: column;
+  /* flex-direction: column; */
   margin: 50px;
   gap: 3vw;
 `;
+
+// const cities = ['Tokyo', 'New York', 'Mexico City', 'Seoul'];
+// const reversedCities = [];
+// while (cities.[length] > 0){
+//   reversedCities.push(cities.pop());
+// }
+
+// const cities = ['Tokyo', 'New York', 'Mexico City', 'Seoul'];
+// for (let i=0; i<=3; i++){
+//   console.log(cities[i]);
+// }
+
+// const cities = ['Tokyo', 'New York', 'Mexico City', 'Seoul'];
+// cities[1]= "sao"
+
+// const characters = ['Darth Vader', 'Princess Leia', 'Luke Skywalker',  'Han Solo'] ;
+// let longest ="";
+// for(let )

@@ -8,6 +8,8 @@ import Home from "./pages/Home/Home";
 import KidsShowList from "./pages/KidsShowList/KidsShowList";
 import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
+//THIS IS DEPLOYED AT :" fam-flix.surge.sh"
+
 function App() {
   return (
     <Router>
